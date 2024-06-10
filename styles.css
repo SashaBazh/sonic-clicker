@@ -1,0 +1,53 @@
+body {
+    background-color: #141221;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    text-align: center;
+    color: white;
+}
+
+#score {
+    font-size: 100px;
+}
+
+#click-area {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#sonic-image {
+    width: 200px;
+    transition: transform 0.1s ease;
+}
+
+#score-counter {
+    position: absolute;
+    font-size: 50px;
+    color: #ff8b1f;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.1s ease;
+}
+
+#progress-bar-container {
+    width: calc(100% - 100px);
+    height: 20px;
+    background-color: #bf6524;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #ff8b1f;
+    transition: width 0.1s ease;
+}
+
